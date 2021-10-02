@@ -36,7 +36,7 @@ const Chats = () => {
 
     axios.get('https://api.chatengine.io/users/me/', {
       headers: {
-        'project-id': '2472b306-5e0e-4bae-a443-6a0b712a21bc',
+        'project-id': '', /* project id here */
         'user-name': user.email,
         'user-secret': user.uid,
       }
@@ -85,7 +85,7 @@ const Chats = () => {
 
       <ChatEngine 
         height='calc(100vh - 66px)'
-        projectID='2472b306-5e0e-4bae-a443-6a0b712a21bc'
+        projectID='' */  
         userName={user.email}
         userSecret={user.uid}
       />
